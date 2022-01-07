@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Problem Solving</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+    * { margin: 0; padding: 0; }
+
+    body {
+      background: url(ASSETS/images/Chapter6.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    #page-wrap { width: auto; margin: 30px ; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; background-color: #000;color: #ffffff; }
+
+    p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+    #imgs
+    {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    #img
+    {
+      flex: 1 1 200px;
+      flex: 1 1 100px;
+  margin: 3px;
+  padding: 20px;
+
+    }
+      .sidenav { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #111; overflow-x: hidden; transition: 1.0s; padding-top: 60px;}.sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #FFFFFF; display: block; transition: 1.0s;}.sidenav a:hover { color: #ff3333;}.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 36px; margin-left: 50px;} @media screen and (max-height: 450px) { .sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;}}
+
+
+  </style>
+  <script>
+function openNav() { document.getElementById("mySidenav").style.width = "250px";}
+ function closeNav() { document.getElementById("mySidenav").style.width = "0";}
+</script>
+</head>
+<body  link="white" alink="white " vlink="white">
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>  
+    <a href="Credit.html">Credits</a>
+      <a href="About Us.html">About us</a> 
+       <a href="mailto:trifriends69@gmail.com">Contact us</a>
+   </div>
+    <span style="box-shadow: 0 0 40px #000;margin: 5px; background-color:rgb(255,255,255,0.6);font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  <div style="line-height: 50px; margin: 2px; padding: 10px;"><center><font><h1><mark style="border-radius: 0px;">Problem Solving </mark></h1></font></center></div>
+	<div id="page-wrap">
+    <div id="imgs"><center><div id="img">
+<img src="ASSETS/images/pic16.jpg" height="200px" width="250px"></div>
+</div>
+<div  id="img"><center>
+<img src="ASSETS/images/pic17.jpg" height="200px" width="200px" ></div>
+</center></center>
+<h2><b><u><mark>Various Building Blocks</h2></b></u></mark>
+
+<p><img src="ASSETS/images/pic18.jpg" height="200px"></p>
+<h2><b><u><mark>Programming Languages and Language Translators</h2></b></u></mark>
+
+<p><b><font color="brown">Absence of language makes communication difficult.</font></b>
+<br>
+Let's now try to communicate with a computer which cannot do anything on its own and quires instructions. Do you think you can give instructions to computer in your mother tongue
+Which language computers can understand?
+<br></p>
+<p><mark>
+Computer can understand only one language and it is called machine language. It consists of series of 0&apos;s and 1&apos;s.</mark{>
+<br> <img src="ASSETS/images/pic19.jpg" height="150px" width="250px">
+</p>
+
+<h2><b><u><mark>Programming Languages</h2></b></u></mark>
+<p>You can well imagine, writing in 1s and Os al day will leave you prone to mistakes. By using codes resembling English, programming becomes much easier.<b>The usage of mnemonic codes such as LDA for load, STA for store and SUB for subtract means the code is easier to read and write. </b>The programming language that uses memonics for writing codes is called assembly language.With the need for making programming simpler, High Level Languages were developed These languages make use of English words and mathematical symbols for writing programs Basic is one of the High Level Languages (HLL) used for giving instructions to the computer.</p>
+<h3>Early computers were programmed in machine languages only.</h3>
+
+<h2><b><u><mark>Translator Programs</h2></b></u></mark>
+
+<p>You must be wondering that computers can understand only &apos;Machine Language&apos;, then how come we communicate with computers in Assembly Language or HLL? You are absolutely right in your thinking. You will get your answer if you are able to figure out how we will communicateif we happen to go to China or Germany as we do not understand the languages spoken there. Now you are thinking right, we can hire a translator who can translate our message to Germani Chinese language and their answer / message back to the language we can understand. Let&apos;s learn little more about translator programs used for communicating with computers.
+</p>
+
+
+<h2><b><u><mark>Assembler</h2></b></u></mark>
+
+<p><b>Assembler converts an assembly language program into machine code which is direc understood by computer.</b></p>
+
+<img src="ASSETS/images/pic20.jpg" height="150px" width="250px">
+
+<h2><b><u><mark>High Level Language Translator</h2></b></u></mark>
+
+<p>Since there are different High Level Languages, hence we need different translators for different languages. If we are working on C++ language, we will require C++ translator (compiler), and if we are working on QBasic then we require translator(interpreter) for QBASIC. This translation is done in 2 ways. Take up the following activities to understand the two methods.</p>
+
+<h4 textcolor="brown">Translator</h4>
+<p>Watch the video on YouTube to understand how interpreter and compiler work by following the given link:<a href="http://bit.ly/1KhbysW">http://bit.ly/1KhbvsW</a></p>
+
+<h2><b><u><mark>Interpreter</h2></b></u></mark>
+
+<p><b>The Interpreter fetches single instruction or a single step of program written in HLL, translates it into machine code and executes it immediately.</b><br>This cycle of fetch to translate to execute is repeated for all the instructions. If there is an error in the instruction, the interpreter terminates its process at that statement and displays an error message. After correcting the error, the program in HLL is submitted again. QBASIC is one of the examples of interpreter run languages.
+<img src="ASSETS/images/pic21.jpg" height="200px;" width="250px">
+
+<h2><b><u><mark>Compiler</h2></b></u></mark>
+
+<p><b>Language processor that translates the complete program as a whole in one go into machine code is called compiler.</b></p>
+<p><mark>The program written in HLL is called Source Code and the program translated into machine code is called the <b>Object Code.</b></p>
+<img src="ASSETS/images/pic22.jpg" height="200px" width="250px"><br>
+<p>Compilation process is successful if source code is free of errors. If there are any errors in the source code, the compiler specifies all the errors with line numbers. The errors must be removed before the compiler can successfully recompile the source code again.</p>
+
+<img src="ASSETS/images/pic23.jpg" height="200px" width="250px" alt=""></font>
+<hr>
+<hr></mark></div>
+</div>
+   <div style="margin:60px ;padding: 0px;">
+  <button>
+    <div style="margin:0px ;padding:15px;background-color: black; width: 90px; ">
+      <a href="index.html">←Back</a>
+    </div>
+  </button>
+</div>
+</body>
+</html>

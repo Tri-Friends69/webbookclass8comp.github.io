@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>HyperText Markup Language
+</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+    * { margin: 0; padding: 0; }
+
+    body {
+      background: url(ASSETS/images/Chapter4.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .sidenav { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #111; overflow-x: hidden; transition: 1.0s; padding-top: 60px;}.sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #FFFFFF; display: block; transition: 1.0s;}.sidenav a:hover { color: #ff3333;}.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 36px; margin-left: 50px;} @media screen and (max-height: 450px) { .sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;}}
+
+    #page-wrap { width: auto; margin: 30px ; padding: 20px; background: black; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; color: white; }
+
+    p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+
+  </style>
+ <script>
+function openNav() { document.getElementById("mySidenav").style.width = "250px";}
+ function closeNav() { document.getElementById("mySidenav").style.width = "0";}
+</script>
+</head>
+<body alink="white" vlink="white" link="white">
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>  
+    <a href="Credit.html">Credits</a>
+      <a href="About Us.html">About us</a> 
+       <a href="mailto:trifriends69@gmail.com">Contact us</a>
+   </div>
+    <span style="box-shadow: 0 0 40px #000;margin: 5px; background-color:rgb(255,255,255,0.6);font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+    <div style="line-height: 50px; margin: 2px; padding: 10px;"><center><font><h1><mark style="border-radius: 0px;">HyperText Markup Language </mark></h1></font></center></div>
+
+    <div id="page-wrap">
+  <h3><u>Img Tag</u></h3>
+                <ul type="Square">
+                    <li>In HTML, images are inserted using < img > tag.</li>
+                    <li>The < img > tag is an empty tag.</li>
+                    <li>There are three types of image files which can be used in HTML, indicated by different file name extensions: .jpg, .gif and .png.</li>
+                    </ul>
+                    <p>The img element has a number of attributes:</p>
+                    <h3><u>Required Attributes Img Tag</u></h3>
+            <table bordercolor="DarkOrange" border="3">
+                   <tr bgcolor="pink"> 
+                        <th>Attribute</th>
+                        <th>Description</th>
+
+                        <th>Possible values</th>
+                    </tr>
+                    <tr bgcolor="pink"> 
+                        <td>src</td>
+                        <td>The location/path of the image files to be inserted on the webpage</td>
+
+                        <td>URL</td>
+                    </tr>
+                    <tr bgcolor="pink"> 
+                        <td>alt</td>
+                        <td>Text</td>
+                        <td>Specifies alternate text</td>
+                    </tr>
+            </table>
+                                <h3><u>Optional Attributes Img Tag</u></h3>            
+            <table bordercolor="DarkSalmon" cellpadding="3" cellspacing="0" border="1" height="auto" width="auto">
+                    <tr bgcolor="DarkSlateBlue"> 
+                                <th>Attribute</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                    </tr>
+                    <tr bgcolor="DarkSlateBlue"> 
+                                <td>Aling</td>
+                                <td>Top<br>
+                                    Bottom<br>
+                                    Middle<br>
+                                    Left<br>
+                                    Right<br>
+                                </td>
+                                <td>Specifies the alingment fo the image.</td>
+                    </tr>
+                    <tr bgcolor="DarkSlateBlue">
+                        <td>Border</td>
+                        <td>Pixels</td>
+                        <td>Specifies the width of the image border.</td>
+                    </tr>
+                    <tr bgcolor="DarkSlateBlue">
+                        <td>Height</td>
+                        <td>Pixels or %</td>
+                        <td>Specifies the height of the image border.</td>
+                    </tr>
+                    <tr bgcolor="DarkSlateBlue">
+                        <td>Width</td>
+                        <td>Pixels or %</td>
+                        <td>Sets the width of an image.</td>
+                    </tr>
+            </table>
+            
+            <h3><u>Local Linking</u></h3>
+            <p>When the file is on pc or server and we specify the location to make it appear on the webpage is known as Local Linking.</p>
+            <a href="one line.html" target="_blank">Click here</a><hr>
+            <h3><u>External Linking</u></h3>
+            <p>The links on which when we click to jump to a new webpage either on the same website or a new website this is External Linking</p>
+            <a href="https://www.google.com/" target="_blank">Click here</a><hr>
+            <h3><u>E-Mail Linking</u></h3>
+            <p>To send email from the website designed by us we can provide a special link using the < a href > tag called "Mailto".</p>
+       <a href="mailto:trifriends69@gmail.com">click here </a><hr><hr>
+</div>
+   <div style="margin:60px ;padding: 0px;">
+  <button>
+    <div style="margin:0px ;padding:15px;background-color: black; width: 90px; ">
+      <a href="index.html">←Back</a>
+    </div>
+  </button>
+</div>
+</body>
+</html>

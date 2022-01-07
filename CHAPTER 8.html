@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,Initail-scale=1.0">
+	<title>
+		Looping in QBasic & Project Handling                     
+	</title>
+	<style>
+    * { margin: 0; padding: 0; }
+
+    body {
+      background: url(ASSETS/images/Chapter8.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    #page-wrap { width: auto; margin: 50px ; padding: 20px; background: black;color: #ffffff; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+
+    p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+.sidenav { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #111; overflow-x: hidden; transition: 1.0s; padding-top: 60px;}.sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #FFFFFF; display: block; transition: 1.0s;}.sidenav a:hover { color: #ff3333;}.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 36px; margin-left: 50px;} @media screen and (max-height: 450px) { .sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;}}
+
+  </style>
+  <script>
+function openNav() { document.getElementById("mySidenav").style.width = "250px";}
+ function closeNav() { document.getElementById("mySidenav").style.width = "0";}
+</script>
+</head>
+<body link="white" vlink="white" alink="white">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>  
+    <a href="Credit.html">Credits</a>
+      <a href="About Us.html">About us</a> 
+       <a href="mailto:trifriends69@gmail.com">Contact us</a>
+   </div>
+    <span style="box-shadow: 0 0 40px #000;margin: 5px; background-color:rgb(255,255,255,0.6);font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	<div style="line-height: 50px; margin: 2px; padding: 10px;"><center><font><h1><mark style="border-radius: 0px;">Looping in QBasic & Project Handling </mark></h1></font></center></div>
+	<div id="page-wrap">
+		<div>
+		<h2><center>LOOPING</center></h2>
+		<p>
+			LOOPING is represented execution of certain steps (statements forming Body of Loop) for a fixed number of times". This controlled repetition can be achieved by following steps:
+			<ol>
+				<li>Initailization of Control Variable</li>
+				<li> Statements to be repeated forming BODY of Loop</li>
+				<li> Incrementing the value of Control Variable (COUNT = COUNT + 1)  </li>
+				<li>Checking Control variable against FINAl (COUNT < FINAL) 
+                    	<ul>
+                    		<li>If Condition is TRUE control goes back to the BODY of LOOP</li>
+							<li>Tf Condition is FALSE Control moves to next step (Statement 5)</li>
+
+                    	</ul>
+				</li>
+				<li>Display "LOOP OVER"</li>
+				<li>END</li>
+
+			</ol>  
+		</p>
+
+	</div>
+	<div>
+		<h2>FOR-NEXT STATEMENT</h2>
+		<p>The process of looping can be simplified with the help of OFR-NEXT statement.This Single statement has all the three steps required for making a loop,i.e
+			<ol>
+				<li>Initailised of control Variable </li>
+				<li> Condition Checking with Final value</li>
+				<li> Incrementing/decrementing Control Variable</li>
+
+			</ol>
+			FOR-NEXt is best suited when some statements are to be <b>repeated fixed number of times.</b>
+		</p>
+	</div>
+
+	<div>
+		<h2>How FOR-NEXT works?</h2>
+		<ul>
+				<li>When <b>control comes to FOR statement first time,the Initail Value is assigned to control variable.</b></li>
+				<li>Statements given <b>between</b>For and NEXT are executed.</li>
+				<li>NEXT statement increments the value of CONTrol Variable by 1 and shifts the control to FOR statement (Beginning of LOOP)</li>
+				<li>value of Control VAriavble is Checked <b>against Final Value</b>, if it is still less than or equal to Final value the statements in Body of Loop are represented. </li>
+				<li>If value of Control Variable exceeds thr Final Value, the control shilfts out of the  loop and statement given after NEXT is executed</li>
+			
+		</ul>
+	</div>
+	<div>
+		 <p>
+		 	<h2>CREATING THE FUTURE PROJECTS</h2>
+		 	What is Project?<br>
+		 	Any work which has a specified aim and has to be completed in defined period of time can be carried over like a project.
+		 	<table>
+		 		<tr>
+		 			<td>A project is any systematic activity which has to be completed in a given time frame.  </td>
+		 		</tr>
+		 	</table> 
+		 	<ul>
+		 		Every project has certain characteristics:-
+				<li>Every projects has a <b>defined objectives/ goal/ aim.</b> </li>
+				<li>It consists of <b>sequence of tasks and subtasks.</b></li>
+				<li>Every <b>task has a specific purpose</b> and is clearly defined.</li>
+				<li>The project has a <b>defined timeline according to which its tasks should be completed.</b></li>
+				<li>Every project has its <b>time limit.</b></li>
+		 		
+		 	</ul>
+		 </p>
+
+	</div>
+	<div>
+		<p>
+			<h2>PROJECT MANAGEMENT CYCLE</h2>
+			A project will be successfully completed if we follow the steps of <b>project management cycle.</b><br>
+			<b>A Project Management Cycle consists of following steps:</b>
+			<ul>
+				<li><b>Identification and Planning:</b>
+					The main aim of the project is <b>identified and planning is done to achieve the aim in a defined time period.</b></li>
+				<li><b>Coordination and Organization: Proper coordination of all the activities is done to complete each task in time . Finally, the tasks are compiled to get the final project</b></li>
+				<li><b>Implementation:</b>
+				the project is executed after compiling all the activities.</li>
+				<li><b>Monitoring </b>
+				the tasks are supervised thoroughly so that the activities are running properly.</li>
+				<li><b>Evalution and Testing</b>
+				All the tasks are evaluted and tested properly before finally executing the project. </li>
+				
+			</ul>
+		</p>
+	</div>
+
+			<div>
+				<p>
+					<h2> A WORD OF CAUTION</h2>
+					When we work on computer then certain malicious programs/software get automatically downloaded into our computer through pen drives or internet.These programs may corrupt data,multiply data unnecessarily or lead to malfunctioning of other software.
+
+					<table border="3">
+						<tr>
+							<th>Worms</th>
+							<th>Virus</th>
+
+						</tr>
+
+						<tr>
+							<td>a compyer program that replicates itself and cause problems with smooth functioning of compter. However,unlike it does not require a host program or human help to propogate itself .</td>
+							<td> A compter virus is malicious program that disturbs the normal functioning
+							of compter . It replicates by copying itself to anohter program.</td>
+
+						</tr>
+						
+					</table>
+					<br>
+					<br>
+					<table border="2">
+						<tr>
+							<td>
+						Malware:- It is a malicious software programmed to steal some sensitive and confidentail data from computer.
+					</td>
+					</tr>
+					</table>
+					<br>
+					<br>
+					<table>
+						<tr>
+							<td>
+								Antivirus: It is a software program which protects our computer from harmful programs called virus.<br>
+								Anti-Malware: It is a program that is used to scan and remove malware from computer.
+							</td>
+						</tr>
+					</table>
+				</p>
+	
+			</div>
+			<div>
+				<p>
+					We should be aware of two more terms in order to have good understanding for working on a computer. These terms are:-
+					<ol>
+						<li>Format or Formatting the computer memeory.</li>
+						<li> Defragmentation of computer memory</li>
+
+					</ol>
+					Sometimes, computer gets corrupted to such an extent that we need to Format the computer.
+
+					<br>
+
+					<b>Formatting is the process to prepare hard disk of a computer to store data.One should be very careful while formatting as formatting a disk or computer erases all the existing data on it.</b>
+				</p>
+			</div> 
+			<div>
+				<p>
+					What is fragmentation?<br>
+					Whenever we store a file on a computer it takes some space in the memeory(hard disk). We mat store more than one files in a computer. These files are stored one after another in the computer's memory. After some time if we don't require a file, we may delete it . This leaves a blank chunk of memory. These chunks are called Fragments.
+				</p>
+				<p>
+					Defragmentation is the process of reorganizing the computer memory to arrange all the files in countinuity and combine all the blank chunks together to form a large blank space in memory.
+				</p>
+				<hr>
+				<hr>
+			</div>
+		</div>
+   <div style="margin:60px ;padding: 0px;">
+  <button>
+    <div style="margin:0px ;padding:15px;background-color: black; width: 90px; ">
+      <a href="index.html">←Back</a>
+    </div>
+  </button>
+</div>
+</body>
+</html>

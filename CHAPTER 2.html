@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HyperText Markup Language</title>
+
+<style>
+    * { margin: 0; padding: 0; }
+
+    body {
+      background: url(ASSETS/images/Chapter2.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .sidenav { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #111; overflow-x: hidden; transition: 1.0s; padding-top: 60px;}.sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #FFFFFF; display: block; transition: 1.0s;}.sidenav a:hover { color: #ff3333;}.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 36px; margin-left: 50px;} @media screen and (max-height: 450px) { .sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;}}
+
+
+    #page-wrap { width: auto; margin: 50px ; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; background-color: #000; color: #ffffff; }
+
+    p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+  </style>
+   <script>
+function openNav() { document.getElementById("mySidenav").style.width = "250px";}
+ function closeNav() { document.getElementById("mySidenav").style.width = "0";}
+</script>
+
+</head>
+
+<body link="white" alink="white" vlink="white">
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>  
+    <a href="Credit.html">Credits</a>
+      <a href="About Us.html">About us</a> 
+       <a href="mailto:trifriends69@gmail.com">Contact us</a>
+   </div>
+    <span style="box-shadow: 0 0 40px #000;margin: 5px; background-color:rgb(255,255,255,0.6);font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  <div style="line-height: 50px; margin: 2px; padding: 10px;"><center><font><h1><mark style="border-radius: 0px;">HyperText Markup Language </mark></h1></font></center></div>
+
+  <div id="page-wrap"><font face="times new roman">
+<center>
+<h1><u color="green"><i>WELCOME TO THE WORLD OF HTML</i></u></h1><br></center>
+
+<p><ul type="square"><li>Html is a coding language which is used to make webpages.</li><hr>
+<li>Some suggested apps for coding in computers or laptops-
+<ul type="disc"><li>Notepad(pre installed)</li>
+<li>Visual studio Code(VS CODE)</li>
+<li>Sublime</li></ul><hr>
+<li>Some suggested apps for coding in android-
+<ul type="disc"><li>Notepad++</li>
+<li>anwriter free</li>
+<li>Learn html</li></ul>
+</ul></p><hr>
+<b>
+<p ><center>Syntax of html is -<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;(title goes here)<br>
+&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;(body goes here)<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br></p></center>
+</p>
+<hr>
+
+<h2><mark>Html tags</mark></h2>
+<p><table>
+<caption><b><u></i>Html tags are of two types</u></i></b></caption>
+<tr><mark>
+<th><mark>Container Tags</mark></th>
+<th><mark>Empty tags</th></mark>
+</tr>
+<tr>
+<td bgcolor="lightskyblue"><ol type="i">
+<li>They consist of a Start tag and an End tag.</li>
+<li>These tags contain text or other tags.</li>
+<li>Every Start tag begins using opening angle brackets </li> and the End tag closes using </>.</li>
+<li>An end tag is always preceded by a forward slash.</li>
+<li>An end tag is always preceded by a forward slash.</li>
+<li>Example: Title is an HTML ELEMENT and &lt;Title>...&lt;/Title>is an HTML TAG.</li></ul>
+</td>
+
+
+<td bgcolor="pink">
+<ol type="i">
+<li>These tags do not contain text or any other tag.</li>
+<li>They do not have an end tag.</li>
+<li>Example :&lt;BR>, &lt;HR> are empty tags. We never write &lt;/BR>.</li>
+</ul>
+</td></tr></table></p>
+<hr>
+
+<h2><mark>Some container tags</mark></h2>
+
+<ol type="A">
+<li>HTML tag</li>
+  <ul type="square">
+  <li><html> tag is the container for all other HTML elements.</li>
+ <li>In the code given below &lt;html> is the opening tag and&lt;/html> is the closing tag.</li>
+ <li>The &lt;html> tag represents the root of an HTML document.</li>
+ <li>The standard structure of an HTML document has two sections Head and</li>
+</ul>
+
+<li>HEAD tag</li>
+<ul type="square">
+<li>The &lt;head> tag is a container tag.</li>
+ <li>It is the first element inside the HTML tag.</li> 
+<li>The &lt;head>tag can include a title for the document.</li> 
+<li>It contains no text within it.</li>
+</ul>
+
+<li>TITLE tag</li>
+<ul type="square">
+<li>The &lt;title> tag is used inside the&lt;head> tag to mention the document title.</li>
+<li>The title appears on the top of the webpage i.e. in the Title Bar and not in the actual viewing area. </li>
+<li>It is a container tag. </li>
+</ul>
+<li>BODY tag</li>
+<ul type="square">
+<li>The &lt;body> tag defines the document's body.</li>
+ <li>The &lt;body>tag contains all the contents of an HTML document, such as text,hyperlinks, images, tables,lists, etc.</li>
+ <li>Ther can be only one &lt;body> element in a document.</li>
+ <li>It is a container tag.</li></ul></ol>
+<hr>
+
+<p>some commonly used tags-
+<ol="a">
+<li>&lt;p>-It is used to write a paragraph.</li>
+<li>&lt;h1>It is used to wrote headings. Its value can vary from 1-6.</li>
+<li>&lt;br>-It is used to break line.</li>
+<li>&lt;hr>It is used to draw a horizontal line.</li>
+<li>&lt;font>It denotes the type of font.</li>
+<li>&lt;center>-ut is used to make the text in center.</li>
+</ul></p>
+<hr>
+</font>
+</div>
+
+<div style="margin:60px ;padding: 0px;">
+  <button>
+    <div style="margin:0px ;padding:15px;background-color: black; ">
+      <a href="index.html">←Back</a>
+    </div>
+  </button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming with QBasic</title>
+    <style>
+
+    * { margin: 0; padding: 0; }
+
+    html {
+
+      background: url(ASSETS/images/Chapter7.jpg) no-repeat center center fixed;
+
+      -webkit-background-size: cover;
+
+      -moz-background-size: cover;
+
+      -o-background-size: cover;
+
+      background-size: cover;
+
+    }
+
+    #page-wrap { width: auto; margin: 50px ; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; background-color: #000; color: #ffffff; }
+
+    p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+
+.sidenav { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #111; overflow-x: hidden; transition: 1.0s; padding-top: 60px;}.sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #FFFFFF; display: block; transition: 1.0s;}.sidenav a:hover { color: #ff3333;}.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 36px; margin-left: 50px;} @media screen and (max-height: 450px) { .sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;}}
+
+  </style>
+  <script>
+function openNav() { document.getElementById("mySidenav").style.width = "250px";}
+ function closeNav() { document.getElementById("mySidenav").style.width = "0";}
+</script>
+  </head>
+<body link="white " vlink="white" alink="white">
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>  
+    <a href="Credit.html">Credits</a>
+      <a href="About Us.html">About us</a> 
+       <a href="mailto:trifriends69@gmail.com">Contact us</a>
+   </div>
+    <span style="box-shadow: 0 0 40px #000;margin: 5px; background-color:rgb(255,255,255,0.6);font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <div style="line-height: 50px; margin: 2px; padding: 10px;"><center><font><h1><mark style="border-radius: 00px;">Programming with QBasic</mark></h1></font></center></div>
+    <div id="page-wrap">
+    <div style="border: 3px solid purple; "><h3>Introductions to QBasic:-<br>
+        <ul type="Square">
+            <li>What is the full form of QBasic?</li>
+            Ans:-<font color="Yellow">Quick Beginners All-Purpose Symbolic Instructions Code.</font>
+            <li>Who Developed BASIC?</li>
+            Ans:-<font color="Yellow">John G.Kemeny and Thomas E.Kurtz.</font>
+            <li>In which year it was developed?</li>
+            Ans:-<font color="Yellow">1964</font></ul></h3></div>
+        <ul type="Square">
+            <h3><li><font color="GoldenRod">QBasic and its Advantages</font></li></h3></ul>
+            <P>QBasic is an Integrated Development Environment(IDE), developed by Microsoft to type, edit, debug and execute BASIC language programs.</P> 
+            <P>Some of the advantages of the languages are:-</P>        
+            <ul type="Disc">
+                <li>Simple to use and learn computer languages.</li>
+                <li>QBasic is free and works on most computers.</li>
+                <li>The rules of the languages are very Simple.</li>
+                <li>Popular editions are GW BASIC, BASICA, QBasic and QB64.</li>
+            </ul>
+            <h4>What do ou mean by the term "Statement"?</h4>
+            <h4><font color="Yellow">Ans:-Commands or instructions in QBasic are called Statement.</font></h4>
+            <h4>What do ou mean by the term "Syntax"?</h4>
+            <h4><font color="Yellow">Ans:-Statements should be written accordance with the specific setnof the rules of the language, which are called "Syntax".</font></h4>
+                <p>The elements required to construct a QBasic program are:</p>
+                <ol>
+                    <li>Set of Characters</li>
+                    <li>Keywords</li>
+                    <li>Constants</li>
+                    <li>Variables</li>
+                    <li>Operators and expressions.</li>
+                </ol>
+                <ul type="Square">
+                    <h3><u><li><font color="GoldenRod">Character set</font></li></u></h3></ul>
+                    <p>A character set is a defined as set of symbols used by a proramming language.</p>
+                    <P>QBasic uses the given symbols as its character set.</P>
+            <center>
+                <table border="2" cellpadding="2" cellspacing="0" height="30%" width="70%">
+                        <tr>
+                            <td>Alphabets</td>
+                            <td>A,B,C,D......a,b,c,d......</td>
+                            </tr>
+                            <tr>
+                                <td>Numbers</td>
+                                <td>1,2,3,4,5,6,7,8,9,0</td>
+                            </tr>
+                            <tr>
+                                <td>Special Characters</td>
+                                <td>!,@,#,$.........</td>
+                            </tr>
+                </table>
+            </center>
+        <ul type="Square">
+            <h3><u><li><font color="GoldenRod">Keyword</font></li></u></h3></ul>
+                <p>Keywords are those words which have special meaning in QBasic, these keywords are also known as <b>"Reserved Words"</b>. For Example:-CLS, REM, INPUT, LET, PRINT, FOR, NEXT, IF, THEN, ELSE, ELSEIF, END, MIDS, ASC, SQR, LEN, LEFTS, TIMES and INT. These words cannot be used by programmer as constants or variables.</p>
+                <ul type="Square">
+                    <h3><u><li><font color="GoldenRod">Constants</font></li></u></h3></ul>
+                    <p>Constants are the ata or the values in a program that cannot be changed durng the program execution.</p>
+                    <p>These Constants can grouped into 2 categories:-</p>
+                    <ol type="a">
+                        <h3><u><li><font color="GoldenRod">String Constant</font></li></u></h3>
+                        <p>It can be a letter, word(s), numbers, combination of letters with numbers or special characters enclosed in double quotes.</p>
+                        <p>Mathe matical Expressions cannot be performed on string constants.</p>
+                        <p>"B", "APPLE", "SYMBOL NO:10205", "!!! Welcome to QBasic World !!!",etc. are some examples of string constants.</p>
+                        <h3><u><li><font color="GoldenRod">Numeric Constant</font></li></u></h3>
+                        <p>Numeric Constant refers t a number. A number with or without decimal point is a numeric constant. It can be positive or negative.</p>
+                        <p>Separators are not allowed to be used in numeric constant.</p>
+                        <p>Numeric data should not be enclosed in double quotes.</p>
+                        <p>Mathematical operations and logical operations can be performed on the numeric constants.</p>
+                        <p>101, 105.23, 420, 12345, etc are some examples of the numeric constants. </p>
+                    </ol>
+                    <ul type="Square">
+                        <h3><u><li><font color="GoldenRod">Variable</font></li></u></h3></ul>
+                        <p>A variable is a place in the computer memory which has a name and stores data temprarily.</p>
+                        <p>There are mainly 2 types of vaibles to store 2 types of constnts. They are:</p>
+                        <ol type="i">
+                            <li>String Variable eg. Name$, address$ etc.</li>
+                            <li>Numeric Variable eg. Age%, Marks, Number1, Number2 etc.</li>
+                        </ol>
+                        <b>A string variable stores string data(String Constant).<br>
+                        A numeric variable stores numeric data (Numeric Constant).</b>
+                        <h3>Rules for Naming a Variable:-</h3>
+                        <ul>
+                            <li>A variable name must begin with a letter.</li>
+                            <li>Variable names can have alphabets and numbers.</li>
+                            <li>No special character is allowed in the name except the Underscore.</li>
+                            <li>in case of string variables, variable name is followed by '$' sign. Eg. Adderess$, Name$ etc.</li>
+                            <li>Space is not allowed in variable name.</li>
+                            <li>Reserved words cannot be used as variable names.</li>
+                        </ul>
+                <ol type="1">
+                <h3><u><li><font color="GoldenRod">Operator</font></li></u></h3>
+                    <b>Operators are symbols that indicate the type of operation QBasic has to perform on the data or on the data or on the values of variables.<br></b>
+                    There are four types of operators in QBasic. They are:
+                    a)Arithmetic Operations<br>
+                    b)Logical Operations<br>
+                    c)Relational Operations<br>
+                    d)String Operations
+                <h3><u><li><font color="GoldenRod">QBasic Editor</font></li></u></h3>
+                QBasic is an Integrated Development Environment(IDE), developed by Microsoft to type, edit, debug and execute BASIC language program. For example one can open, save or print a program file using options from the menu bar. Cut/Copy/Paste operations can also be easily carried out in similar way.
+                </ol>
+                <h2>Suggestions for Installing QBasic 1.1/QB64:</h2>
+                <div><b>Windows XP or older: Use QBasic 1.1</b><br>
+                <b>32 Bit</b> Windows Vista, W7, Mac X, and Linux:<b>Use QBasic 1.1 Running In DOSBox</b><br>
+                <b>64 Bit</b> Windows Vista, W7, Mac X and Linux:<b>Use QB64</b></div>
+                <h2>Some suggestive Download Links:</h2>
+                <b>QBASIC 1.1 (Old Dos.exe)-Free Download<br>
+                QB64- Free Download:<a href="http://www.qb64.net">Click for Download</a></b>
+                <ol type="1">
+                    <h3><u><li><font color="GoldenRod">QBasic Statements</font></li></u></h3>
+                <b>A satement(for the QBasic) is an instruction written by using commands of QBasic.</b>
+                Every programming language uses keywords as a statement with certain Syntax. The keywords have specific meaning in the QBasic programming.<br>
+                <b><i>The statement are first stored in the memory and executed only when the RUN command is given.</i></b><br>
+                <h4>Examples:-</h4>
+                1)REM<BR>
+                2)-CLS<br>
+                3)LET<br>
+                4)END<br>
+                5)PRINT
+                <h3><u><li><font color="GoldenRod">Input Statement</font></li></u></h3>
+                The INPUT statement is used to accept a data value from the user and store it in a variable.<br>
+                this statement asks use to enter data by displaying a question mark(?) during the execution of the program. The program waits for user to enter the desired value through keyboard and subsquent pressing of the ENTER key once data is entered.
+                </ol>
+                <div>While using INPUT statement, the computer performs following tasks:<br>
+                #Stops further execution of the program.<br>
+                #It prints a question mark on the screen.<br>
+                #It waits for the user to type in value and press ENTER.<br>
+                #It stores the typed value into corresponding Variable mentioned in the INPUT statement.<hr>
+                <hr></div></div>
+                   <div style="margin:60px ;padding: 0px;">
+  <button>
+    <div style="margin:0px ;padding:15px;background-color: black; width: 90px; ">
+      <a href="index.html">←Back</a>
+    </div>
+  </button>
+</div>
+</body>
+</html>

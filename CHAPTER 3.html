@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>LISTS AND TABLES IN HTML</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+    * { margin: 0; padding: 0; }
+
+    body {
+      background: url(ASSETS/images/Chapter3.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    #page-wrap { width: auto; margin: 50px ; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; background-color: black;color: white; }
+
+    p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+    table{
+      color: white;
+    }
+.sidenav { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #111; overflow-x: hidden; transition: 1.0s; padding-top: 60px;}.sidenav a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #FFFFFF; display: block; transition: 1.0s;}.sidenav a:hover { color: #ff3333;}.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 36px; margin-left: 50px;} @media screen and (max-height: 450px) { .sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;}}
+
+  </style>
+ <script>
+function openNav() { document.getElementById("mySidenav").style.width = "250px";}
+ function closeNav() { document.getElementById("mySidenav").style.width = "0";}
+</script>
+</head>
+<body link="white" vlink="white" alink="white" >
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>  
+    <a href="Credit.html">Credits</a>
+      <a href="About Us.html">About us</a> 
+       <a href="mailto:trifriends69@gmail.com">Contact us</a>
+   </div>
+    <span style="box-shadow: 0 0 40px #000;margin: 5px; background-color:rgb(255,255,255,0.6);font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+  <div style="line-height: 50px; margin: 2px; padding: 10px;"><center><font><h1><mark style="border-radius: 0px;"> LISTS AND TABLES IN HTML</mark></h1></font></center></div>
+  <div id="page-wrap">
+  
+<h3><b><u><i>Lists</b></u></i></h3>
+   <p> Lists are of two types-
+     <ul><li>ul-unordered list</li>
+            <li>ol-ordered list</li></ul></p>
+<hr>
+<h3><b><i><u>Unordered list</u></i></b><h3>
+      <p >  <ul type="square">
+    <li>An unordered list is a collection of related items that have no special order</li>
+      <li>This list is created by using &lt;UL> tag.</li>
+      <li>Each item in the list is marked with a bullet.</li>
+      <li>Before every individual item we have to use &lt;LI> tag.</li>
+      <li>Different designs of Bullets can be used in a list.</li>
+      <li>Default bullet style is disc.</li>
+      <li>It is a container tag. i.e. at the end of the list we have to type lt;/UL>.</li></ul></p>
+   <hr >
+    <h3><b><i><u>Ordered lists</u></b></i></h3>
+
+ <p>    <ul type="square">
+    <li>An ordered list is a collection of related items that are numbered.</li>
+      <li>This list is created by using &lt;OL> tag.</li>
+      <li>Each item in the list is marked with a number/alphabet.</li>
+      <li>Before every individual item we have to use &lt;LI> tag.</li>
+      <li>Different styles of numbering can be used in a list.</li>
+      <li>It is a container tag. i.e. at the end of the list we have to type &lt;/OL>.</li></ul></p>
+<hr>
+<h3><b><i><u>Nesting</u></b></i></h3>
+   <p>Using of list inside list is known as nesting.<br>
+  E.g-<ul><li>This is list 1.</li>
+        <ol/><li>This is list 2.</li>
+     <ul><li>It showed the use of list under list...</li></ul></ol></ul></p>
+    <hr>  
+      <h3><u><b><i>Table Tag</b></i></u></h3>
+      <p>      <ul type="Square">
+            <li>The < TABLE > tag allows us to arrange data into rows and columns.</li>
+            <li>It is a container tag.</li>
+            </ul>
+            <h3><u>Table Row</h3></u>
+            <ul type="Square">
+            <li>Each row in a table is defined with < TR >.</li>
+            <li>It is a container tag.</li>
+            <li>Hence, it must end with< /TR >.</li>
+            </ul>
+            <h3><u>Table Heading</u></h3>
+            <ul type="Square">
+            <li>Table heading can be defined using < TH > tag.</li>
+            <li>It displays the headings in bold letters.</li>
+            </ul>
+            <h3><u> Attributes Table Tag</u></h3>
+            <table bordercolor="IndianRed" cellpadding="3" cellspacing="0" border="1" height="20%" width="80%" >
+                <tr > 
+                    <th>Attribute</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Bgcolor</td>
+                    <td>color name</td>
+                    <td>Specifies the background color for a table.</td>
+                </tr>
+                <tr >
+                    <td>Border</td>
+                    <td>0 or 1</td>
+                    <td>Specifies whether a border around the table is required or not.</td>
+                </tr>
+                <tr >
+                    <td>Cellpadding</td>
+                    <td>Pixels</td>
+                    <td>Specifies the space between the cell wall and the cell content.</td>
+                </tr>
+                <tr >
+                    <td>Cellspacing</td>
+                    <td>Pixels</td>
+                    <td>Specifies the space between cells</td>
+                </tr>
+                <tr >
+                    <td> Height, Width</td>
+                    <td>Pixels %</td>
+                    <td>Specifies the height and width of a table.</td>
+                </tr>
+            </table></p>
+          </div>
+          <div style="margin:60px ;padding: 0px;">
+  <button>
+    <div style="margin:0px ;padding:15px;background-color: black; width: 90px; ">
+      <a href="index.html">←Back</a>
+    </div>
+  </button>
+</div>
+    </body>
+</html>
