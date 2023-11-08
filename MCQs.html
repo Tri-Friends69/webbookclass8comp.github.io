@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT Quiz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="work html">
+    <meta name="discription" content="practice">
+    <style type="text/css">
+         body {
+      background: url(ASSETS/images/pic01.jpeg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: white;
+      display: block;
+    margin: 15px;
+    margin-top: ;
+    margin-right: ;
+    margin-bottom: ;
+    margin-left: ;
+    }
+    {
+  border: 3px #000;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+    #amrit{
+        margin: 10px;
+        margin-left: 50px;
+    }
+    #raj{
+
+    }
+    </style>
+    <script>
+
+
+
+        function calculateScore() {
+            var form = document.getElementById('quizForm');
+            var answers = form.elements;
+            var score = 0;
+
+            for (var i = 0; i < answers.length; i++) {
+                if (answers[i].type === "radio" && answers[i].checked) {
+                    if (answers[i].value === "b") {
+                        score++;
+                    }
+                }
+            }
+
+            var result = document.getElementById('quizResult');
+            result.innerHTML = "Your Score: " + score + " out of " + (answers.length / 2);
+        }
+
+        function showAnswers() {
+            var form = document.getElementById('quizForm');
+            var answers = document.getElementsByClassName('answer');
+
+            for (var i = 0; i < answers.length; i++) {
+                answers[i].style.display = "block";
+            }
+
+            calculateScore();
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <h1>IT Quiz</h1></center>
+    <div id="amrit">
+
+
+    <form id="quizForm">
+        <div id="raj">
+        <h2>Question 1: What does HTML stand for?</h2>
+        <input type="radio" name="q1" value="a"> a) Hyper Text Markup Language
+        <br>
+        <input type="radio" name="q1" value="b"> b) High Tech Machine Learning <br>
+        <input type="radio" name="q1" value="c"> c) Hyper Transfer Markup Language<br>
+        <input type="radio" name="q1" value="d"> d) Home Text Management Language<br>
+        <p class="answer" style="display: none;">Correct Answer: a) Hyper Text Markup Language<br></p>
+    </div>
+    <div id="raj">
+        <h2>Question 2: Which HTML tag is used to define the body of an HTML document?</h2>
+        <input type="radio" name="q2" value="a"> a) &lt;header&gt;<br>
+        <input type="radio" name="q2" value="b"> b) &lt;body&gt;<br>
+        <input type="radio" name="q2" value="c"> c) &lt;main&gt;<br>
+        <input type="radio" name="q2" value="d"> d) &lt;content&gt;<br>
+        <p class="answer" style="display: none;">Correct Answer: b) &lt;body&gt;</p>
+    </div>
+    <div id="raj">
+        <h2>Question 3: Which tag is used to create a hyperlink in HTML?</h2>
+        <input type="radio" name="q3" value="a"> a) &lt;link&gt;<br>
+        <input type="radio" name="q3" value="b"> b) &lt;url&gt;<br>
+        <input type="radio" name="q3" value="c"> c) &lt;a&gt;<br>
+        <input type="radio" name="q3" value="d"> d) &lt;href&gt;<br>
+        <p class="answer" style="display: none;">Correct Answer: c) &lt;a&gt;</p>
+    </div>
+    <div id="raj">
+        <h2>Question 4: Which tag is used to add a line break in HTML?</h2>
+        <input type="radio" name="q4" value="a"> a) &lt;line&gt;<br>
+        <input type="radio" name="q4" value="b"> b) &lt;break&gt;<br>
+        <input type="radio" name="q4" value="c"> c) &lt;lb&gt;<br>
+        <input type="radio" name="q4" value="d"> d) &lt;br&gt;<br>
+        <p class="answer" style="display: none;">Correct Answer: d) &lt;br&gt;</p>
+    </div>
+    <div id="raj">
+        <h2>Question 5: Which HTML tag is used to create an ordered list?</h2>
+        <input type="radio" name="q5" value="a"> a) &lt;ul&gt;<br>
+        <input type="radio" name="q5" value="b"> b) &lt;li&gt;<br>
+        <input type="radio" name="q5" value="c"> c) &lt;ol&gt;<br>
+        <input type="radio" name="q5" value="d"> d) &lt;dl&gt;<br>
+        <p class="answer" style="display: none;">Correct Answer: c) &lt;ol&gt;</p>
+    </div>
+    <div id="raj">
+        <h2>Question 6: What does the &lt;img&gt; tag do in HTML?</h2>
+        <input type="radio" name="q6" value="a"> a) Define an image<br>
+        <input type="radio" name="q6" value="b"> b) Create a link<br>
+        <input type="radio" name="q6" value="c"> c) Display a video<br>
+        <input type="radio" name="q6" value="d"> d) Insert a table<br>
+        <p class="answer" style="display: none;">Correct Answer: a) Define an image</p>
+    </div>
+    <div id="raj">
+        <h2>Question 7: Which tag is used for creating an HTML table?</h2>
+        <input type="radio" name="q7" value="a"> a) &lt;table&gt;<br>
+        <input type="radio" name="q7" value="b"> b) &lt;tab&gt;<br>
+        <input type="radio" name="q7" value="c"> c) &lt;tbl&gt;<br>
+        <input type="radio" name="q7" value="d"> d) &lt;tabular&gt;<br>
+        <p class="answer" style="display: none;">Correct Answer: a) &lt;table&gt;</p>
+    </div>
+    <div id="raj">
+        <h2>Question 8: What is the correct way to comment out multiple lines in HTML?</h2>
+        <input type="radio" name="q8" value="a"> a) &lt;!-- This is a comment --&gt;<br>
+        <input type="radio" name="q8" value="b"> b) / This is a comment /<br>
+        <input type="radio" name="q8" value="c"> c) /* This is a comment */<br>
+        <input type="radio" name="q8" value="d"> d) -- This is a comment --<br>
+        <p class="answer" style="display: none;">Correct Answer: a) &lt;!-- This is a comment --&gt;</p>
+    </div>
+    <div id="raj">
+        <h2>Question 9:Choose the correct HTML element for the largest heading:</h2>
+        <input type="radio" name="q8" value="a"> a) &lt;heading&gt;<br>
+        <input type="radio" name="q8" value="b"> b)&lt;head&gt;<br>
+        <input type="radio" name="q8" value="c"> c) &lt;h6&gt;<br>
+        <input type="radio" name="q8" value="d"> d)&lt;h1&gt;<br>
+        <p class="answer" style="display: none;">Correct Answer: d) &lt;h1&gt;</p>
+    </div>
+    <div id="raj">
+        <h2>Question 10:Choose the correct HTML element to define important text</h2>
+        <input type="radio" name="q8" value="a"> a)&lt;strong&gt;<br>
+        <input type="radio" name="q8" value="b"> b) &lt;i&gt;<br>
+        <input type="radio" name="q8" value="c"> c) &lt;important&gt;<br>
+        <input type="radio" name="q8" value="d"> d) &lt;b&gt;<br>
+        <p class="answer" style="display: none;">Correct Answer: a) &lt;strong&gt;</p></div>
+    </form></div>
+        <br><br><br>
+<button type="button" onclick="showAnswers()">Submit</button> </form> <div id="quizResult"></div> </body> </html>
